@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABE - Administrador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            background-color: #1a2a6c;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        .btn-danger {
+            background-color: #f44336;
+        }
+        .btn-back {
+            background-color: #555;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LABE - Administrador</h1>
+        <a href="index.html" class="btn btn-back">Sair</a>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Ações Rápidas</h2>
+            <div class="action-buttons">
+                <a href="#" class="btn">Adicionar Time</a>
+                <a href="#" class="btn">Criar Campeonato</a>
+                <a href="#" class="btn">Agendar Partida</a>
+                <a href="#" class="btn">Adicionar Usuário</a>
+                <a href="#" class="btn">Publicar Notícia</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Times Cadastrados</h2>
+            <div class="team">
+                <h3>Batata FC</h3>
+                <p>Cidade: Batataville | Fundação: 2010</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Ver Detalhes</a>
+                    <a href="#" class="btn">Editar</a>
+                </div>
+            </div>
+            <hr>
+            <div class="team">
+                <h3>Real Mandioca</h3>
+                <p>Cidade: Mandiocópolis | Fundação: 2012</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Ver Detalhes</a>
+                    <a href="#" class="btn">Editar</a>
+                </div>
+            </div>
+            <hr>
+            <div class="team">
+                <h3>Atlético Inhame</h3>
+                <p>Cidade: Inhame City | Fundação: 2015</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Ver Detalhes</a>
+                    <a href="#" class="btn">Editar</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Campeonatos</h2>
+            <div class="championship">
+                <h3>Copa LABE 2025</h3>
+                <p>Status: Em andamento | Times: 3</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Ver Detalhes</a>
+                    <a href="#" class="btn">Editar</a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="btn btn-back">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>

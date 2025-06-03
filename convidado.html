@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABE - Convidado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            background-color: #1a2a6c;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        .btn-back {
+            background-color: #555;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-date {
+            color: #777;
+            font-size: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LABE - Convidado</h1>
+        <a href="index.html" class="btn btn-back">Voltar</a>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Últimas Notícias</h2>
+            <div class="news-item">
+                <h3>Batata FC vence clássico contra Real Mandioca</h3>
+                <p class="news-date">16/03/2025</p>
+                <p>Em um jogo emocionante, o Batata FC venceu o Real Mandioca por 3x2 no Estádio da Batata. Carlos Batata foi o destaque da partida com dois gols.</p>
+            </div>
+            <div class="news-item">
+                <h3>Atlético Inhame anuncia contratação de novo técnico</h3>
+                <p class="news-date">20/03/2025</p>
+                <p>O Atlético Inhame anunciou hoje a contratação do técnico José Silva para a temporada 2025. José tem vasta experiência em ligas amadoras e promete levar o time ao título.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Tabela - Copa LABE 2025</h2>
+            <table>
+                <tr>
+                    <th>Pos</th>
+                    <th>Time</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Batata FC</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Real Mandioca</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Atlético Inhame</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>-3</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Próximas Partidas</h2>
+            <div class="match">
+                <h3>Real Mandioca vs Atlético Inhame</h3>
+                <p><strong>Data:</strong> 29/03/2025</p>
+                <p><strong>Horário:</strong> 15:00</p>
+                <p><strong>Local:</strong> Arena Mandioca</p>
+            </div>
+            <div class="match">
+                <h3>Batata FC vs Atlético Inhame</h3>
+                <p><strong>Data:</strong> 05/04/2025</p>
+                <p><strong>Horário:</strong> 15:00</p>
+                <p><strong>Local:</strong> Estádio da Batata</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Times</h2>
+            <div class="team">
+                <h3>Batata FC</h3>
+                <p><strong>Cidade:</strong> Batataville</p>
+                <p><strong>Estádio:</strong> Estádio da Batata</p>
+                <p><strong>Fundação:</strong> 2010</p>
+                <a href="#" class="btn">Ver Elenco</a>
+            </div>
+            <hr>
+            <div class="team">
+                <h3>Real Mandioca</h3>
+                <p><strong>Cidade:</strong> Mandiocópolis</p>
+                <p><strong>Estádio:</strong> Arena Mandioca</p>
+                <p><strong>Fundação:</strong> 2012</p>
+                <a href="#" class="btn">Ver Elenco</a>
+            </div>
+            <hr>
+            <div class="team">
+                <h3>Atlético Inhame</h3>
+                <p><strong>Cidade:</strong> Inhame City</p>
+                <p><strong>Estádio:</strong> Inhame Arena</p>
+                <p><strong>Fundação:</strong> 2015</p>
+                <a href="#" class="btn">Ver Elenco</a>
+            </div>
+        </div>
+        
+        <a href="index.html" class="btn btn-back">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>

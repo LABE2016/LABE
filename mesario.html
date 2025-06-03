@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABE - Mesário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            background-color: #1a2a6c;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        .btn-danger {
+            background-color: #f44336;
+        }
+        .btn-back {
+            background-color: #555;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .match {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .match:last-child {
+            border-bottom: none;
+        }
+        .score {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LABE - Mesário</h1>
+        <a href="index.html" class="btn btn-back">Sair</a>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Partidas de Hoje</h2>
+            <div class="match">
+                <h3>Batata FC vs Real Mandioca</h3>
+                <p>Local: Estádio da Batata | Horário: 15:00</p>
+                <div class="score">3 x 2</div>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Registrar Evento</a>
+                    <a href="#" class="btn">Atualizar Placar</a>
+                    <a href="#" class="btn">Finalizar Partida</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Próximas Partidas</h2>
+            <div class="match">
+                <h3>Real Mandioca vs Atlético Inhame</h3>
+                <p>Local: Arena Mandioca | Data: 29/03/2025 | Horário: 15:00</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Registrar Evento</h2>
+            <form>
+                <div style="margin-bottom: 10px;">
+                    <label for="event-type">Tipo de Evento:</label>
+                    <select id="event-type" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <option value="gol">Gol</option>
+                        <option value="cartao-amarelo">Cartão Amarelo</option>
+                        <option value="cartao-vermelho">Cartão Vermelho</option>
+                        <option value="substituicao">Substituição</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="player">Jogador:</label>
+                    <select id="player" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <option value="player1">Carlos Batata</option>
+                        <option value="player2">João Mandioca</option>
+                        <option value="player3">Pedro Inhame</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="minute">Minuto:</label>
+                    <input type="number" id="minute" style="width: 100%; padding: 8px; margin-top: 5px;">
+                </div>
+                <button type="button" class="btn">Registrar</button>
+            </form>
+        </div>
+        
+        <a href="index.html" class="btn btn-back">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
